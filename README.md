@@ -1,1 +1,1 @@
-Repositório para meus estudos com Selenium.
+Repositório para meus estudos com Selenium..
