@@ -8,6 +8,13 @@
   <name>automatizado</name>
   <url>http://maven.apache.org</url>
 
+  <properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
   <dependencies>
   
     <dependency>
@@ -17,26 +24,19 @@
       <scope>test</scope>
     </dependency>
 
-<!-- Arquivo de propriedades do projeto --> 
-<properties> 
-<maven.compiler.source>1.8</maven.compiler.source> 
-<maven.compiler.target>1.8</maven.compiler.target> 
-<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> </properties> 
 <!-- Dependência para fazer o Senium funcionar no Chrome --> 
-<dependency> 
-<groupId>org.seleniumhq.selenium</groupId> 
-<artifactId>selenium-chrome-driver</artifactId> 
-<version>3.141.59</version> 
-<scope>test</scope> 
-</dependency>
-<!-- Dependência de ferramentas de suporte para selenium --> <dependency> 
-<groupId>org.seleniumhq.selenium</groupId> 
-<artifactId>selenium-support</artifactId> 
-<version>3.141.59</version> 
-<scope>test</scope> 
-</dependency>
-
-
-
+  <dependency> 
+    <groupId>org.seleniumhq.selenium</groupId> 
+    <artifactId>selenium-chrome-driver</artifactId> 
+    <version>3.141.59</version> 
+    <scope>test</scope> 
+  </dependency>
+<!-- Dependência de ferramentas de suporte para selenium --> 
+  <dependency> 
+    <groupId>org.seleniumhq.selenium</groupId> 
+    <artifactId>selenium-support</artifactId> 
+    <version>3.141.59</version> 
+    <scope>test</scope> 
+  </dependency>
   </dependencies>
 </project>
